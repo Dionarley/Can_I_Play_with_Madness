@@ -7,8 +7,19 @@
 <body>
     <div class="container">
         <h1>Editor de Código Monaco</h1>
+        <div class="toolbar">
+            <button id="save-button">Salvar</button>
+            //aqui adicionamos o seletor de temas
+            <select id="theme-select">
+                <option value="vs">Light</option>
+                <option value="vs-dark" selected>Dark</option>
+                <option value="hc-black">High Contrast Black</option>
+            </select>
+        </div>
         <div id="editor-container"></div>
     </div>
+
+    
     <script src="/vs/loader.js"></script>
     <script src="app.js"></script>
 </body>
